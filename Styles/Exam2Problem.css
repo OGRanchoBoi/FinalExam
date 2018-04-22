@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+    color: red;
+}
+
+
+#viewallcat {
+    position: absolute;
+    background-color: white;
+    visibility: hidden;
+    width: 600px;
+}
+
+#addnewcat {
+    position: absolute;
+    background-color: white;
+    visibility: hidden;
+    width: 600px;
+}
+
+#updatecatdesc {
+    position: absolute;
+    background-color: white;
+    visibility: hidden;
+    width: 600px;
+}
+
+#deletecatid {
+    position: absolute;
+    background-color: white;
+    visibility: hidden;
+    width: 600px;
+}
+
+#aboutme {
+    position: absolute;
+    background-color: white;
+    visibility: hidden;
+    width: 600px;
+}
+
+#header {
+    background-color: #006400;
+}
+
+button {
+    width: 600px;
+    height: 50px;
+}
+
+#menu {
+    width 600px;
+    height: 150px;
+    align-content: center;
+}
+
+.example {
+    color: red;
+    font-style: italic;
+}

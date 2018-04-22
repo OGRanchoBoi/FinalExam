@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Final Exam Problem</title>
+    <link rel="stylesheet" type="text/css" href="Styles/Exam2Problem.css" />
+    <script src ="JS/Exam2problem.js"></script>
+</head>
+
+<body>
+    <section id="header">
+    <h1>Final Exam Problem</h1>
+    </section>
+    <section>
+    <select onchange="MenuChoice();" id="menu">
+    <option><strong>Please select an option</strong></option>
+    <option>View Categories</option>
+    <option>Add New Category</option>
+    <option>Update Category Description</option>
+    <option>Delete Category</option>
+    <option>Contact Information</option>
+</select>
+    </section>
+    
+    <section id="viewallcat">
+    <label>Feel free to view all of our categories here!</label>
+    <br>
+    <button onclick="GetCategory();">Click here to display categories</button>
+    <br>
+    <label id="displayAllCategories">Content will display here</label>
+    <br>
+    <br>
+    </section>
+
+    <section id="addnewcat">
+    <label>Got a new category you want to add? Feel free to add it here!</label>
+    <br>
+    <label>Please enter the category name here:</label>
+    <input id="newcatname">
+    <br>
+    <label>Please enter a description for the category</label>
+    <input id="newcatdescription">
+    <br>
+    <label>Once finished, click here and you will be notified if your category has been created</label>
+    <button onclick="CreateCategory();">Click here when finished</button>
+    <br>
+    <hr>
+    <label id= "displaynewcat">Your Confirmation Notice will display here</label>
+    </section>
+    
+    <section id="updatecatdesc">
+    <label>Need to update a description for one of your categories? Go ahead and change it here!</label>
+    <br>
+    <label>Specify the ID of the category:</label>
+    <input id="cidtoupdate" type="number">
+    <br>
+    <label>Provide the new description here:</label>
+    <input id="updatecdescription">
+    <button onclick="UpdateDescription();">Update Description</button>
+    <br>
+    <hr>
+    <label id="updateresult">Your update status will display here</label>
+    </section>
+    
+    <section id="deletecatid">
+    <label>Have an unnecessary category that needs to be deleted? Go ahead and do it here</label>
+    <br>
+    <label>Please enter the CategoryID you wish to delete:</label>
+    <input id="deletecat" type="text">
+    <br>
+    <button onclick="DeleteCategory();">Delete Category</button>
+    <br>
+    <hr>
+    <label id="result3">You will be notified of the deletion here</label>
+        
+    </section>
+    <section id="aboutme">
+        <label>Contact Information:</label>
+        <label>Name: David Austin Black</label>
+        <br>
+        <label>Email: <em>dblack10@uab.edu</em></label>
+        <br>
+        <label>Phone: <em>(205) 999-1422</em></label>
+        <br>
+        <label><strong>Thanks for the groovy semester</strong></label>
+        <br>
+        <br>
+        <img src="Pictures/GroovyBass.jpg">
+    </section>
+    
+
+</body>
+</html>
